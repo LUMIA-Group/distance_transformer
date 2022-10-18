@@ -20,8 +20,15 @@ Totally six machine translation datasets are entailed as follows
 - `ASPEC Chinese to Japanese`
 - `WMT14 English to German`
 
+For instance, if you want to prepare dataset iwslt14de2en/en2de, run the corresponding data preparation script
+
+`cd preprocess`
+`bash prepare-iwslt14.sh`
+
 ## Distance Preparation
 To run our syntactic based model, the sytactic distance of sourcce language sentence must be firstly generated, and the scripts here could be directly run.
+
+For instance, if you want to prepare syntactic distance of source language iwslt14de2en, which is German, run the corresponding distance preparation script(data preparation must be completed first)
 
 `bash distance_iwslt_de2en.sh`
 
@@ -64,6 +71,4 @@ The final BLEU score for the test set will be logged into a .txt file.
 - `scripts/ tests/ helpers/ docs/ build/`<br>
   Other auxiliary folders for compilation and running.
 
-}
-```
 
