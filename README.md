@@ -5,7 +5,7 @@ We provide the code for reproducing our model's result and data preprocessing.
 
 ## Requirements
 You can directly download this code and run a requirement installation:
-`pip install -r requirements.txt` on your conda environment.
+`pip install -r requirements.txt` on your conda environment.(our python version is 3.6)
 
 Then it's necessary to run the setting up code `pip install --editable ./` and it's camera-ready now to run shell scripts in the `run` directory.
 
