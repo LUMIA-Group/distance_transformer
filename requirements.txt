@@ -22,7 +22,6 @@ regex==2021.4.4
 tqdm==4.63.0
 dataclasses==0.8
 setuptools==59.6.0
-transformers.egg==info
 torchaudio==0.8.1
 opencv_python==4.5.3.56
 boto3==1.21.13
