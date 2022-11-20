@@ -31,12 +31,11 @@ beautifulsoup4==4.11.1
 deepspeed==0.6.5
 fairscale==0.4.6
 fastBPE==0.1.0
-gossip==2.4.0
 hydra==2.5
 iopath==0.1.9
 subword_nmt==0.3.8
 tensorboardX==2.5.1
-transformers==4.20.1
+transformers==4.18.0.dev0
 typing==3.10.0.0
 wandb==0.12.19
 PyYAML==6.0
