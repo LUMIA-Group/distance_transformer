@@ -9,8 +9,7 @@ mkdir -p ${LOG_DIR}
 cp run/train_nc11_de2en.sh ${LOG_DIR}/train_nc11_de2en.sh
 
 CUDA_VISIBLE_DEVICES=0,1 python train.py \
-distance_transformer/data-bin/nc11de2en \
---distance-path distance_prior \
+data-bin/nc11de2en \
 --seed ${1} \
 --source-lang de \
 --target-lang en \
@@ -57,7 +56,6 @@ echo ${LOG_DIR}/${CKPT}
 
 CUDA_VISIBLE_DEVICES=0 python generate.py \
 	${DATA_PATH} \
-	--distance-path distance_prior \
 	--batch-size 128 \
 	--path ${LOG_DIR}/${CKPT} \
 	--beam ${BEAM_SIZE} \
