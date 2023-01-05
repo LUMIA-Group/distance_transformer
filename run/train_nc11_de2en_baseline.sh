@@ -9,7 +9,7 @@ mkdir -p ${LOG_DIR}
 cp run/train_nc11_de2en_baseline.sh ${LOG_DIR}/train_nc11_de2en_baseline.sh
 
 CUDA_VISIBLE_DEVICES=0,1 python train.py \
-distance_transformer/data-bin/nc11de2en \
+data-bin/nc11de2en \
 --distance-path distance_prior \
 --seed ${1} \
 --source-lang de \
